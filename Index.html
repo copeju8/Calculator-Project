@@ -10,30 +10,15 @@
 </head>
 <body>
     <main class="calculator">
-        <div class="input-header">
-            <h2> first number</h2>
-            <h2>second number</h2>
-        </div>
-        <div class="label">
-            <label for="first-number"></label>
-            <input  type="text" id="first-number" name="first-number" autofocus>
-            <label for="sec-number"></label>
-            <input type="text" id="sec-number" name="sec-number">
-        </div>
-        <div class="button-radio">
-            <button type="radio">Add</button>
-            <button type="radio">Subtract</button>
-            <button type="radio">Multiply</button>
-            <button type="radio">Divide</button>
-        </div>
-        <div class="button-submit"> 
-            <button type="submit">=</button>
-            <button type="submit">Clear</button>
-        </div>
-        <div>
-            /* result string*/
-
-        </div>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+          </form>
     </main>
     
 </body>
