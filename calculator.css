@@ -1,3 +1,93 @@
 body {
-    background-color: rgb(190, 207, 238);
-  }
+  background: rgb(223, 177, 109);
+  font-size: 80%;
+  padding: 20px;
+}
+
+main {
+  background: rgb(228, 148, 57);
+  height: 20rem;
+  width: 80%;
+  margin: auto;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  resize: both;
+  position: relative;
+  padding-left: 5%;
+}
+
+.calculator{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-size: 2.0rem;
+  font-family: 'Courier New', Courier, monospace;
+  resize: both;
+  text-align: center;
+  position: absolute;
+}
+
+.label{
+  margin-left: auto;
+  margin-right: auto;
+  width:25em;
+  padding: 20px;
+}
+
+radio {
+  margin-left: auto;
+  margin-right: auto;
+  width:25em;
+  padding: 20px;
+
+
+}
+
+.number input[type-text] focus {
+  padding:10px 10px 10px 10px;
+  font-size:18px;
+  border: none #F2F2F2;
+  float: center;
+  height:20px;
+  width:20px;
+  background: white;
+  color: #5F6368;
+  border-radius:3px;
+  margin: auto;
+  width:25%;
+  padding:5px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px outset rgb(226, 230, 235);
+  border-radius:15px;
+  z-index:2;
+} 
+
+input {
+  border-style:none;
+  background-color: #eee;
+  outline:none; 
+}
+
+
+button{
+ 
+  color: #5F6368;
+  border: 2px;
+  background-color: #F6F6F6;
+  border-radius: solid 4px;
+  border: none;
+  height: 36px;
+  padding-top: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: arial,sans-serif;
+  font-size: 18px;
+  margin: 11px 14px;
+  line-height: 27px;
+  min-width: 70px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}

@@ -9,17 +9,30 @@
     <script src="calculator.js" defer></script>
 </head>
 <body>
-    <main class="calculator">
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
-            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
-            <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
-            <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
-          </form>
+    <main>
+        <div class="calculator">
+            <form>      
+                <div class="number"> 
+                    <div class="label">
+                        <label for="first number"><type="text" name="first number" autofocus> First Number </label>
+                        <label for="second number"> <type="text" name="second number"> Second Number</label>
+                    </div>
+                    <div>
+                        <input type="text" name ="first number" placeholder="Enter numbers required">
+                        <input type="text" name ="second number" placeholder="Enter numbers required">
+                </div> 
+                <div class="radio">
+                        <label for="Add"><input id="Add" type="radio" name="Add-Subtract"> Add</label>
+                        <label for="Subtract"><input id="Subtract" type="radio" name="Add-Subtract"> Subtract</label><br>
+                        <label for="Multiply"><input id="Multiply" type="radio" name="personality"> Multiply</label>
+                        <label for="Divide"><input id="Divide" type="radio" name="personality"> Divide</label> 
+                </div>      
+                <div class="btn">
+                        <button type="submit">=</button>
+                        <button type="submit">Clear</button>
+                </div>                
+            </form>
+        </div> 
     </main>
-    
 </body>
 </html>
