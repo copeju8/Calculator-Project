@@ -11,25 +11,25 @@
 <body>
     <main>
         <div class="calculator">
-            <form>      
+            <form >      
                 <div class="number"> 
                     <div class="label">
-                        <label for="first number"><type="text" name="first number" autofocus> First Number </label>
+                        <label for="first number"><type="text" name="first number" > First Number </label>
                         <label for="second number"> <type="text" name="second number"> Second Number</label>
                     </div>
-                    <div>
-                        <input type="text" name ="first number" placeholder="Enter numbers required">
-                        <input type="text" name ="second number" placeholder="Enter numbers required">
+                    <div class="screen">
+                        <input type="text" name ="input-one" placeholder="Enter numbers required" autofocus>
+                        <input type="text" name ="input-two" placeholder="Enter numbers required">
                 </div> 
                 <div class="radio">
-                        <label for="Add"><input id="Add" type="radio" name="Add-Subtract"> Add</label>
-                        <label for="Subtract"><input id="Subtract" type="radio" name="Add-Subtract"> Subtract</label><br>
-                        <label for="Multiply"><input id="Multiply" type="radio" name="personality"> Multiply</label>
-                        <label for="Divide"><input id="Divide" type="radio" name="personality"> Divide</label> 
+                    <input type="radio" name="math" value="add" onclick="valueButton(this.value)"> Add
+                    <input type="radio" name="math" value="subtract" onclick="valueButton(this.value)"/> Subtract
+                    <input type="radio" name="math" value="multiply" onclick="valueButton(this.value)"/> Multiply
+                    <input type="radio" name="math" value="divide" onclick="valueButton(this.value)"/> Divide
                 </div>      
                 <div class="btn">
-                        <button type="submit">=</button>
-                        <button type="submit">Clear</button>
+                        <button type="submit" name="equal">=</button>
+                        <button type="submit" name="clear">Clear</button>
                 </div>                
             </form>
         </div> 
