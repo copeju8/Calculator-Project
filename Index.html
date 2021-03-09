@@ -22,14 +22,14 @@
                         <input type="text" name ="input-two" placeholder="Enter numbers required">
                 </div> 
                 <div class="radio">
-                    <input type="radio" name="math" value="add" onclick="valueButton(this.value)"> Add
-                    <input type="radio" name="math" value="subtract" onclick="valueButton(this.value)"/> Subtract
-                    <input type="radio" name="math" value="multiply" onclick="valueButton(this.value)"/> Multiply
-                    <input type="radio" name="math" value="divide" onclick="valueButton(this.value)"/> Divide
+                    <label><input type="radio" name="math" value="Add" checked onclick="valueButton(this)"> <span>Add</span></label>
+                    <label><input type="radio" name="math" value="Subtract"  onclick="valueButton(this)"> <span>Subtract</span></label>
+                    <label> <input type="radio" name="math" value="Multiply"  onclick="valueButton(this)"/> <span>Multiply</span></label>
+                    <label><input type="radio" name="math" value="Divide"onclick="valueButton(this)"/> <span>Divide</span></label>
                 </div>      
                 <div class="btn">
-                        <button type="submit" name="equal">=</button>
-                        <button type="submit" name="clear">Clear</button>
+                    <button><input type="button" name="equal" value="=" onclick="calculate()"></button>
+                    <button><input type="button" name="clear" value="Clear" onclick="clear()">Clear</button>
                 </div>                
             </form>
         </div> 

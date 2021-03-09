@@ -45,6 +45,11 @@ main {
   font-size: 18px;
 }
 
+input[type="radio"]:checked + span
+{
+    font-weight: bold;
+}
+
 .number input[type-text] focus {
   padding:10px 10px 10px 10px;
   font-size:18px;
