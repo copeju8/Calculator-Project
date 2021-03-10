@@ -1,19 +1,44 @@
- var y = document.getElementsByName("first-number").innerHTML;
- var z= document.getElementsByName("second-number").innerHTML;
- var x = document.getElementsByName("equal").innerHTML;
+ 
+const operators = { add: "+", subtract: "-", multiply: "*", divide: "/"}
+var ans;
 
-function valueButton(e){
-    calculatorForm.screen.value +=e.value;
+/*function valueButton(e){
+    operators.screen.value +=e.value;
 }
 function Clear(){
-    calculatorForm.screen.value = null;
-}
+    operators.screen.value = null;
+}*/
 
 function Calculate(){
-    let answer = calculatorForm.screen.value= eval(calculatorForm.screen.value);
-    return answer;
+    
+    var num1 = document.getElementsByName("input1").value;
+    var num2 = document.getElementsByName("input2").value;
+    var eq = document.getElementsByName("equal").value;
+
+console.log(operators.add);
+    console.log(operators[num1] === operators[num2]);
+
+    // get selected radio button and input values
+    
+    switch (operators){
+        case operators.Add:
+            ans =  num1+num2;
+            break;
+        case operators.subtract:
+            ans =  num1-num2;
+            break;
+        case operators.multiply:
+            ans =  num1*num2;
+            break;
+        case operators.divide:
+            num2 !=0;
+            ans =  num1/num2;
+            break;
+        default:
+            return "Try again!"
+    }
+    var ans = document.getElementsByClassName("equal").value;
 }
 
-Calculate(y,z);
-
-
+var answer = Calculate(4,5);
+console.log(answer);

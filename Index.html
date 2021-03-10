@@ -10,27 +10,25 @@
 </head>
 <body>
     <main>
-        <div class="calculator">
-            <form class ="calculatorForm" name="calculatorForm" >     
+        <div class="calculator"> 
                     <div class="label">
                         <label for="first-number"><type="text" name="first-number" > First Number </label>
                         <label for="second-number"> <type="text" name="second-number"> Second Number</label>
                     </div>
                     <div class="screen">
-                        <input type="text" name ="screen" class="screen" value=""  autofocus >
-                        <input type="text" name ="screen" class="screen" value="" >
+                        <input type="text" name ="input1" class="input1" value=""  autofocus >
+                        <input type="text" name ="input1" class="input1" value="" >
                     </div> 
                 <div class="radio">
-                    <label><input type="radio" name="math" value= "+" checked onclick="valueButton(this)"> <span>Add</span></label>
-                    <label><input type="radio" name="math" value= "-" onclick="valueButton(this)"> <span>Subtract</span></label>
-                    <label><input type="radio" name="math" value= "*" onclick="valueButton(this)"/> <span>Multiply</span></label>
-                    <label><input type="radio" name="math" value= "/" onclick="valueButton(this)"/> <span>Divide</span></label>
+                    <label><input type="radio" name="math" value= "+" checked onclick="Calculate()"><span>Add</span></label>
+                    <label><input type="radio" name="math" value= "-" onclick="Calculate()"><span>Subtract</span></label>
+                    <label><input type="radio" name="math" value= "*" onclick="Calculate()"/><span>Multiply</span></label>
+                    <label><input type="radio" name="math" value= "/" onclick="Calculate()"/><span>Divide</span></label>
                 </div>      
                 <div class="btn">
                     <button><input type="button" name="equal" value= "=" onclick="Calculate()"></button>
-                    <button><input type="button" name="clear" value= "Clear" onclick="Clear()"></button>
+                    <button><input type="button" name="clear" value= " " onclick="Clear()"></button>
                 </div>                
-            </form>
         </div> 
     </main>
 </body>
